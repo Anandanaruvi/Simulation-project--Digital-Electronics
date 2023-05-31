@@ -2,6 +2,10 @@
 
 ### DESIGN AND SIMULATE AN SR FLIP FLOP WITH A NOR GATE AND POSITIVE EDGE TRIGGERING IN VERILOG:
 
+### AIM: 
+
+TO Design and simulate an sr flip flop with a nor gate and positiive edge triggering in verilog programming,and validate its outputs.
+
 ### HARDWARE REQUIRED:
 
 A computer, Verilog simulation tool,Verilog development environment,SR flip-flop with NOR gate
