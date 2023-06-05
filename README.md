@@ -58,63 +58,26 @@ NAME: A.ARUVI
 REF NO: 212222230014
 
 ``` 
-module sr_flipflop (
-  input s, r, clk,
-  output q, q_bar
-);
-
-  wire s_nor_r;
-  wire r_nor_s;
-
-  nor (s_nor_r, s, r);
-  nor (r_nor_s, r, s);
-
-  d_flipflop flipflop (
-    .d(1'b1),
-    .clk(clk),
-    .q(q),
-    .q_bar(q_bar)
-  );
-
-endmodule
-
-module d_flipflop (
-  input d, clk,
-  output reg q, q_bar
-);
-
-  always @(posedge clk) begin
-    q <= d;
-    q_bar <= ~d;
-  end
-
+module sr(s,r,clk,q,qbar);
+input s,r,clk;
+output reg q;
+output reg qbar;
+always @(posedge clk)
+begin
+q=s|(~r&q);
+qbar=r|(~s&~q);
+end
 endmodule
 ```
 ### NETLIST DIAGRAM
 ```
-s  ────────┐
-           ├──────┐
-r ────────┘      │
-                 ├───────► q
-clk ──────────────┘
-        NOR Gate
+![image](https://github.com/Anandanaruvi/Simulation-project--Digital-Electronics/assets/120443233/7613233a-49bc-44ee-ac44-0a6c8debb266)
+
 ```
 ### TIMING DIAGRAM
 ```
-    +---+            +---+
-        |   |            |   |
-   S -- |   |------------|   |
-        |   |            |   |
-   R -- |   |------------|   |
-        |   |            |   |
-  CLK --|   |_____/\/\/\__|   |
-        |   |     ↑      |   |
-        |   |     |      |   |
-   Q -- |   |_____↓______|   |
-        |   |            |   |
-  Q_bar-|___|____________|___|
-         ↑   ↑            ↑   ↑
-        Tsetup Thold      Tpd Tpd 
+![image](https://github.com/Anandanaruvi/Simulation-project--Digital-Electronics/assets/120443233/55a2b47c-05bf-47df-80f5-13bf79ff6ebd)
+
 ```
 ### TRUTH TABLE:
 ```
