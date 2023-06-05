@@ -76,8 +76,7 @@ endmodule
 ```
 ### TIMING DIAGRAM
 ```
-![image](https://github.com/Anandanaruvi/Simulation-project--Digital-Electronics/assets/120443233/55a2b47c-05bf-47df-80f5-13bf79ff6ebd)
-
+C:\Users\SEC\Pictures\Screenshots\Screenshot (245).png
 ```
 ### TRUTH TABLE:
 ```
