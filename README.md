@@ -71,12 +71,11 @@ endmodule
 ```
 ### NETLIST DIAGRAM
 ```
-![image](https://github.com/Anandanaruvi/Simulation-project--Digital-Electronics/assets/120443233/7613233a-49bc-44ee-ac44-0a6c8debb266)
 
 ```
 ### TIMING DIAGRAM
 ```
-C:\Users\SEC\Pictures\Screenshots\Screenshot (245).png
+
 ```
 ### TRUTH TABLE:
 ```
