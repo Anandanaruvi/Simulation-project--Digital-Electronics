@@ -70,13 +70,13 @@ end
 endmodule
 ```
 ### NETLIST DIAGRAM
-```
 
-```
+![image](https://github.com/Anandanaruvi/Simulation-project--Digital-Electronics/assets/120443233/d108dd0d-fc9f-4557-9fd3-9d13678717ee)
+
 ### TIMING DIAGRAM
-```
 
-```
+![image](https://github.com/Anandanaruvi/Simulation-project--Digital-Electronics/assets/120443233/7e24272f-d5ba-412a-8fc9-fafea21afa9f)
+
 ### TRUTH TABLE:
 ```
  S  |  R  |  CLK  ||  Q  |  Q_bar
